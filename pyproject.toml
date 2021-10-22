@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "django-non-dark-admin"
+version = "1.0"
+description = "Disable dark mode in Django admin user interface in Django 3.2.x."
+homepage = "https://github.com/DOOMer/django-non-dark-admin"
+repository = "https://github.com/DOOMer/django-non-dark-admin"
+authors = ["Artem Galichkin <doomer3d@gmail.com>"]
+maintainers = ["Artem Galichkin <doomer3d@gmail.com>"]
+packages = [ { include = "django_non_dark_admin", from = "src" } ]
+readme = "README.rst"
+license = "BSD"
+keywords = ["django", "admin", 'dark', 'fix',]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Unix",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.6",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = ">=3.2"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/DOOMer/django-non-dark-admin/issues"
