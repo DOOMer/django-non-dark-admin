@@ -31,8 +31,8 @@ Add a boolean field `disable_dark_mode` to your custom user model:
 
     disable_dark_mode = models.BooleanField(
         verbose_name="Django Admin Theme",
-        default=False choices=((False, "Dark mode"),
-        (True, "Light mode")),
+        default=False choices=((False, "Dark"),
+        (True, "Light")),
         null=True
     )
 
@@ -64,7 +64,7 @@ It should generate a migration like this:
                 model_name="<Your Custom Auth User model>",
                 name="disable_dark_mode",
                 field=models.BooleanField(
-                    choices=[(False, "Dark mode"), (True, "Light mode")],
+                    choices=[(False, "Dark"), (True, "Light")],
                     default=False,
                     null=True,
                 ),
