@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-non-dark-admin"
-version = "1.0"
+version = "2.0"
 description = "Disable dark mode in Django admin user interface in Django 3.2.x."
 homepage = "https://github.com/DOOMer/django-non-dark-admin"
 repository = "https://github.com/DOOMer/django-non-dark-admin"
@@ -16,11 +16,11 @@ classifiers = [
     "Operating System :: Unix",
     "Environment :: Web Environment",
     "Framework :: Django",
-    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.2",
     "Programming Language :: Python :: 3.6",
     "Topic :: Software Development :: Libraries :: Python Modules"
 ]
-
+include = ["AUTHORS.rst", "CHANGES.rst"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
